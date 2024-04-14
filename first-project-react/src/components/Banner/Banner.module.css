@@ -1,0 +1,10 @@
+.banner {
+  background-color: var(--c-bg);
+  justify-content: center;
+  color: var(--c-black);
+  padding-top: 46px;
+  margin-top: 20px;
+  height: 146px;
+  width: 100%;
+  display: flex;
+}

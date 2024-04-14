@@ -1,0 +1,28 @@
+.aside {
+  background-color: var(--c-bg);
+  box-sizing: border-box;
+  margin-top: 26px;
+  height: 440px;
+  width: 330px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  display: flex;
+}
+
+.item {
+  background-color: var(--c-aside);
+  margin-bottom: 10px;
+  height: 110px;
+  width: 270px;
+}
+
+.list {
+  flex-direction: column;
+  padding-left: 26px;
+  padding-top: 26px;
+  display: flex;
+}

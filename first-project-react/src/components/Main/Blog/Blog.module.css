@@ -1,0 +1,29 @@
+.section {
+  background-color: var(--c-bg);
+  box-sizing: border-box;
+  margin-top: 24px;
+  height: 440px;
+  width: 800px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  display: flex;
+}
+
+.list {
+  flex-direction: column;
+  padding-left: 26px;
+  padding-top: 26px;
+  display: flex;
+}
+
+.item {
+  background-color: var(--c-blog);
+  margin-bottom: 26px;
+  max-width: 740px;
+  width: 100%;
+  height: 70px;
+}

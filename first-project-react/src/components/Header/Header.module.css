@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--c-bg);
+  align-items: center;
+  min-height: 48px;
+  max-width: 100%;
+  display: flex;
+}
+
+.title {
+  align-items: center;
+  padding-top: 10px;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+}
+
+.item {
+  background-color: var(--c-nav);
+  height: 34px;
+  width: 48px;
+  gap: 20px;
+}
