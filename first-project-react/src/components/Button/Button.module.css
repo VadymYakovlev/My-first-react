@@ -1,0 +1,23 @@
+.button {
+  background-color: var(--c-aside);
+  transition: opacity var(--t-normal);
+  color: var(--c-white);
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 40px;
+  border: 1px solid var(--c-black);
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.red {
+  background-color: var(--c-red);
+}
+
+.white {
+  background-color: var(--c-white);
+  color: var(--c-black);
+}

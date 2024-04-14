@@ -1,6 +1,6 @@
 // * Components
-import Blog from './Blog/Blog';
-import Aside from './Aside/Aside';
+import Blog from '../Blog/Blog';
+import Aside from '../Aside/Aside';
 
 // * Styles
 import styles from './Main.module.css';

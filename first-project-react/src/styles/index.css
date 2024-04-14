@@ -1,11 +1,15 @@
 :root {
+  /* Colors */
   --c-aside: #bdcdf6;
   --c-blog: #f9d7d7;
   --c-logo: #f1f2ae;
   --c-nav: #e7efd6;
   --c-white: white;
   --c-black: black;
+  --c-red: red;
   --c-bg: #d9d9d9;
+  /* Transitions */
+  --t-normal: 0.35s cubic-bezier (0.4, 0, 0.2, 1);
 }
 
 * {
