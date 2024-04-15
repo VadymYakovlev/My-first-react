@@ -1,6 +1,6 @@
 // * Components
 import Wrapper from './../Wrapper/Wrapper';
-import Button from '../Button/Button.';
+import Button from '../Button/Button';
 import LIST from './Header.data';
 import Logo from '../Logo/Logo';
 
@@ -20,7 +20,7 @@ const Header = () => {
           <Button text={'Sign in'} onClick={SignIn} />
           <Button text={'Sign up'} />
           <Button color="red" />
-          <Button color="white" />
+          <Button href="https://www.fb.com/" color="white" text="facebook" />
         </div>
 
         <div className={styles.title}>Blog name</div>

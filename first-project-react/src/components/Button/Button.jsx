@@ -6,7 +6,8 @@ import styles from './Button.module.css';
 const Button = ({
   text = 'default text',
   type = 'button',
-  color = 'default',
+  color = '',
+  href = '',
   onClick,
 }) => {
   const stylelist = [styles.button];
@@ -23,6 +24,19 @@ const Button = ({
     default: {
       console.log('!!!');
     }
+  }
+
+  if (href) {
+    return (
+      <a
+        target="_blank"
+        href={href}
+        onClick={onClick}
+        className={cn(stylelist)}
+      >
+        <span> {text}</span>{' '}
+      </a>
+    );
   }
 
   return (

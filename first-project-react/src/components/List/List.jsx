@@ -5,10 +5,27 @@ import { useCallback, useState, useEffect } from 'react';
 import axios from 'axios';
 
 // * Components
-import Button from '../Button/Button.';
+import Button from '../Button/Button';
 
 // * Styles
 import styles from './List.module.css';
+
+const Loading = () => {
+  return <p>Завантаження...</p>;
+};
+
+const Error = ({ Retry }) => {
+  return (
+    <>
+      <p>Помилка завантаження</p>
+      <Button text="Повторіть спробу" onClick={Retry} />
+    </>
+  );
+};
+
+const EmptyList = () => {
+  return <p>Помилка завантаження</p>;
+};
 
 const List = () => {
   const [state, setState] = useState({
@@ -47,19 +64,13 @@ const List = () => {
   }, [getList]);
 
   if (state.loading) {
-    return <p>Завантаження...</p>;
+    return <Loading />;
   }
   if (state.error) {
-    return (
-      <>
-        <p>{state.error}</p>
-        <Button text="Повторіть спробу" onClick={getList} />
-      </>
-    );
+    return <Error Retry={getList} />;
   }
-
   if (!state.list.length) {
-    return <p>Помилка завантаження</p>;
+    return <EmptyList />;
   }
 
   return (
