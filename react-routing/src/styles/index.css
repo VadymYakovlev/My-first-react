@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --c-aside: #bdcdf6;
+  --c-blog: #f9d7d7;
+  --c-logo: #f1f2ae;
+  --c-nav: #e7efd6;
+  --c-white: white;
+  --c-black: black;
+  --c-red: red;
+  --c-bg: #d9d9d9;
+  /* Transitions */
+  --t-normal: 0.35s cubic-bezier (0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-black);
+}
+
+ul {
+  list-style-type: none;
+}
