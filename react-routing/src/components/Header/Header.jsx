@@ -12,6 +12,7 @@ const Header = () => {
       <Wrapper className={styles.wrapper}>
         <Link to="/">Main</Link>
         <Link to="/about">About</Link>
+        <Link to="/registration">Registration</Link>
       </Wrapper>
     </header>
   );

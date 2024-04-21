@@ -1,15 +1,27 @@
 :root {
   /* Colors */
+  --c-silver: rgb(175, 173, 173);
+  --c-button: #007bff;
   --c-aside: #bdcdf6;
   --c-blog: #f9d7d7;
   --c-logo: #f1f2ae;
   --c-nav: #e7efd6;
   --c-white: white;
+  --c-bg: #d9d9d9;
   --c-black: black;
   --c-red: red;
-  --c-bg: #d9d9d9;
   /* Transitions */
   --t-normal: 0.35s cubic-bezier (0.4, 0, 0.2, 1);
+  /* Styles */
+  --style-base: Roboto;
+  --ff-link: Inter;
+  /* Fonts */
+  --fs-base: 15px;
+  --fs-title: 24px;
+  --fw-title: 500;
+  --fw-base: 400;
+  --fs-link: 12px;
+  --fs-sub: 14px;
 }
 
 * {
@@ -29,4 +41,12 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
 }

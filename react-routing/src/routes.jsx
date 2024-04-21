@@ -8,6 +8,7 @@ import Loading from './components/Loading/Loading';
 const Main = lazy(() => import('./pages/Main/Main'));
 const About = lazy(() => import('./pages/About/About'));
 const Error = lazy(() => import('./pages/Error/Error'));
+const Registration = lazy(() => import('./pages/Registration/Registration'));
 
 // * Element
 const Element = ({ component }) => {
@@ -26,6 +27,10 @@ const routes = createBrowserRouter([
       {
         path: '/about',
         element: <Element component={<About />} />,
+      },
+      {
+        path: '/Registration',
+        element: <Element component={<Registration />} />,
       },
       {
         path: '*',
