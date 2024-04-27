@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.blockitem {
+.item {
   justify-content: center;
   width: 270px;
   left: 35px;
@@ -20,15 +20,9 @@
 
 .blockinput {
   grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  margin-top: 20px;
   display: grid;
+  margin-top: 20px;
   gap: 12px;
-}
-
-.email {
-  width: 100%;
-  justify-content: center;
 }
 
 .country {
@@ -43,55 +37,4 @@
 
 .radio {
   display: flex;
-}
-
-.terms {
-  font-weight: var(--fw-base);
-  font-size: var(--fs-sub);
-  color: var(--c-privacy);
-  text-align: center;
-  line-height: 18px;
-  margin-top: 20px;
-  margin: 0 auto;
-  height: 36px;
-  width: 410px;
-}
-
-.link {
-  font-weight: var(--fw-base);
-  font-family: var(--ff-link);
-  font-size: var(--fs-sub);
-  color: var(--c-button);
-  line-height: 18px;
-}
-
-.line {
-  border-top: 1px solid var(--c-line);
-  margin-top: 20px;
-  margin: 10px 0;
-  margin: 0 auto;
-  border: none;
-  width: 500px;
-}
-
-.footer {
-  margin-top: 20px;
-  margin: 0 auto;
-  width: 180px;
-}
-
-.footeritem {
-  font-size: var(--fs-base);
-  text-align: right;
-  font-weight: 400;
-  margin-top: 30px;
-  width: 116px;
-}
-
-.footerlink {
-  font-family: var(--style-base);
-  font-weight: var(--fw-title);
-  font-size: var(--fs-sub);
-  color: var(--c-button);
-  padding-left: 10px;
 }

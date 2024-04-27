@@ -1,0 +1,41 @@
+.terms {
+  font-weight: var(--fw-base);
+  font-size: var(--fs-sub);
+  color: var(--c-privacy);
+  text-align: center;
+  line-height: 18px;
+  margin-top: 20px;
+  margin: 0 auto;
+  height: 36px;
+  width: 410px;
+}
+
+.link {
+  font-weight: var(--fw-base);
+  font-family: var(--ff-link);
+  font-size: var(--fs-sub);
+  color: var(--c-button);
+  line-height: 18px;
+}
+
+.footer {
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 180px;
+}
+
+.footeritem {
+  font-size: var(--fs-base);
+  text-align: right;
+  font-weight: 400;
+  margin-top: 30px;
+  width: 116px;
+}
+
+.footerlink {
+  font-family: var(--style-base);
+  font-weight: var(--fw-title);
+  font-size: var(--fs-sub);
+  color: var(--c-button);
+  padding-left: 10px;
+}

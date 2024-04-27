@@ -1,0 +1,18 @@
+.form {
+  /* Colors */
+  border: 1px solid var(--c-black);
+  --c-text: #545454;
+  font-family: Roboto;
+  font-weight: 400;
+  max-width: 600px;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.input {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 4px;
+}

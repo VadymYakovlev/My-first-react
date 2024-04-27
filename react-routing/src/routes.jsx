@@ -9,6 +9,7 @@ const Main = lazy(() => import('./pages/Main/Main'));
 const About = lazy(() => import('./pages/About/About'));
 const Error = lazy(() => import('./pages/Error/Error'));
 const Registration = lazy(() => import('./pages/Registration/Registration'));
+const Authorization = lazy(() => import('./pages/Authorization/Authorization'));
 
 // * Element
 const Element = ({ component }) => {
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([
       {
         path: '/Registration',
         element: <Element component={<Registration />} />,
+      },
+      {
+        path: '/Authorization',
+        element: <Element component={<Authorization />} />,
       },
       {
         path: '*',
