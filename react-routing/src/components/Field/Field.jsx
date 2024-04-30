@@ -50,18 +50,18 @@ const Textarea = ({
 }) => {
   return (
     <>
-      <label className={styles.label}>
-        {title && <div className={styles.title}>{title}</div>}
-        <textarea
-          className={cn([styles.textarea, styles.input])}
-          name={name}
-          onChange={onChange}
-          onBlur={onBlur}
-          value={value}
-          placeholder={placeholder}
-        />
-        <div className={styles.error}>{error}</div>
-      </label>
+      {/* <label className={styles.label}> */}
+      {title && <div className={styles.title}>{title}</div>}
+      <textarea
+        className={cn([styles.textarea, styles.input])}
+        name={name}
+        onChange={onChange}
+        onBlur={onBlur}
+        value={value}
+        placeholder={placeholder}
+      />
+      <div className={styles.error}>{error}</div>
+      {/* </label> */}
     </>
   );
 };

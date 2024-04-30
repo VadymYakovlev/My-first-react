@@ -1,5 +1,5 @@
 // * Base
-import RadioButton from '../Radio/RadioButton';
+// import RadioButton from '../Radio/RadioButton';
 import Button from './../Button/Button';
 import FORM from '../../helpers/form';
 import Field from '../Field/Field';
@@ -7,6 +7,9 @@ import { Formik } from 'formik';
 
 // * Styles
 import styles from './RegistrationForm.module.css';
+import Radio from '../Radio/Radio';
+import Select from '../Select/Select';
+// import Select from '../Select/Select';
 
 // * Local
 const INITIAL_VALUES = {
@@ -80,7 +83,7 @@ const RegistrationForm = () => {
         }) => (
           <form onSubmit={handleSubmit} className={styles.form}>
             {/* Username/Lastname */}
-            <div className={styles.blockinput}>
+            <div className={styles.block}>
               <Field
                 className={styles.item}
                 name='username'
@@ -114,42 +117,9 @@ const RegistrationForm = () => {
               onBlur={handleBlur}
               error={errors.email && touched.email && errors.email}
             />
-            {/* Radio */}
-            <label className={styles.radio}>
-              <RadioButton
-                id='color-one'
-                name='gender'
-                value='male'
-                label='Male'
-              />
-              <RadioButton
-                id='color-two'
-                name='gender'
-                value='female'
-                label='Female'
-              />
-            </label>
-            {/* Section */}
-            <div className={styles.blockinput}>
-              <label>
-                <div className={styles.select}>Country</div>
-                <select className={styles.country}>
-                  <option value='' disabled selected hidden>
-                    Select country
-                  </option>
-                  <option value='1'>Austria</option>
-                  <option value='2'>Bulgary</option>
-                  <option value='3'>Columbia</option>
-                  <option value='4'>Denmark</option>
-                  <option value='5'>France</option>
-                  <option value='6'>Germany</option>
-                  <option value='7'>Italy</option>
-                  <option value='8'>Poland</option>
-                  <option value='9'>Turkey</option>
-                  <option value='10'>Ukraine</option>
-                </select>
-              </label>
-              {/* City */}
+            <Radio />
+            <div className={styles.block}>
+              <Select />
               <div className={styles.item}>
                 <Field
                   type='city'
@@ -163,7 +133,6 @@ const RegistrationForm = () => {
                 />
               </div>
             </div>
-            {/* Button */}
             <Button type='submit' text='Registration' disabled={isSubmitting} />
           </form>
         )}
